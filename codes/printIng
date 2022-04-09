@@ -1,0 +1,11 @@
+.data
+	age: .word 23
+	PI: .float 3.14
+.text
+	li $v0, 1
+	lw $a0, age 	#load word 
+	syscall
+	
+	li $v0, 2
+	lwc1 $f12, PI #load word code procerod one
+	syscall
